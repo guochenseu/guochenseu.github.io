@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+          
+            var ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(ua)) {
+                //苹果	
+                window.location = "itms-services://?action=download-manifest&url=https://mam.sgcc.com.cn/netplatform-web/download/MAMInternal.plist";
+            } else if (/android/.test(ua)) {
+                window.location= "http://http://apk.hiapk.com/appdown/com.dlxx.arbuildingshow";  
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
